@@ -3,11 +3,14 @@ apply plugin: 'com.github.dcendents.android-maven'
 apply plugin: 'com.jfrog.bintray'
 
 // 定义两个链接，下面会用到。
-def siteUrl = 'https://github.com/ansen666/OkHttpEncapsulation' // 项目主页。
-def gitUrl = 'https://github.com/ansen666/OkHttpEncapsulation.git' // Git仓库的url。
+def siteUrl = 'https://github.com/881205wzs/UItraPullToRefresh' // 项目主页。
+def gitUrl = 'https://github.com/881205wzs/UItraPullToRefresh.git' // Git仓库的url。
 
-group = "com.davis.jcenter.lib"// 唯一包名,比如compile 'com.ansen.http:okhttpencapsulation:1.0.1'中的com.ansen.http就是这里配置的。
-version = "1.0.2"//项目引用的版本号，比如compile 'com.ansen.http:okhttpencapsulation:1.0.1'中的1.0.1就是这里配置的。
+// 唯一包名，比如implementation 'com.davis.ui.pulltorefresh:pulltorefresh:2.1.0'中的com.davis.ui.pulltorefresh就是这里配置的。
+group = "com.davis.ui.pulltorefresh"
+
+//项目引用的版本号，比如implementation 'com.davis.ui.pulltorefresh:pulltorefresh:2.1.0'中的2.1.0就是这里配置的。
+version = "2.1.0"
 
 install {
     repositories.mavenInstaller {
@@ -16,8 +19,8 @@ install {
             project {
                 packaging 'aar'
                 // 项目描述，复制我的话，这里需要修改。
-                name 'jcenter-lib'// 可选，项目名称。
-                description 'jcenter-lib project describe'// 可选，项目描述。
+                name 'uitrapulltorefresh'// 可选，项目名称。
+                description 'UItraPullToRefresh project describe'// 可选，项目描述。
                 url siteUrl // 项目主页，这里是引用上面定义好。
 
                 // 软件开源协议，现在一般都是Apache License2.0吧，复制我的，这里不需要修改。
@@ -33,7 +36,7 @@ install {
                     developer {
                         id 'wzs' // 开发者的id。
                         name 'daivs' // 开发者名字。
-                        email 'davis@gmail.com' // 开发者邮箱。
+                        email 'wangzhongshun1205@163.com' // 开发者邮箱。
                     }
                 }
 
@@ -82,7 +85,7 @@ bintray {
     configurations = ['archives']
     pkg {
         repo = "maven"  //Repository名字 需要自己在bintray网站上先添加
-        name = "jcenter-lib"// 发布到Bintray上的项目名字，这里的名字不是compile 'com.ansen.library:circleimage:1.0.1'中的circleimage。
+        name = "UItraPullToRefresh"// 发布到Bintray上的项目名字，这里的名字不是implementation 'com.davis.ui.pulltorefresh:pulltorefresh:2.1.0'中的pulltorefresh。
         userOrg = 'wzs'//Bintray的组织id
         websiteUrl = siteUrl
         vcsUrl = gitUrl
