@@ -5,4 +5,4 @@
 
 # Import to your project
 
-![](https://github.com/881205wzs/UItraPullToRefresh/raw/master/default_1.jpg#pic_center =240x400)
+![](https://github.com/881205wzs/UItraPullToRefresh/raw/master/default_1.jpg#pic_center)
