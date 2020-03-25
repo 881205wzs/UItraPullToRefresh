@@ -9,10 +9,10 @@ Step 1.添加Gradle
 
 ```kotlin
 allprojects {
- repositories {
-	 ...
-	 jcenter()
- }
+     repositories {
+	...
+	jcenter()
+     }
 }
 ```
 
@@ -21,7 +21,7 @@ Step 2.Add the dependency
 
 ```kotlin
 dependencies {
-  ...
-  implementation 'com.davis.ui.pulltorefresh:pulltorefresh:2.1.0'
+      ...
+      implementation 'com.davis.ui.pulltorefresh:pulltorefresh:2.1.0'
 }
 ```
