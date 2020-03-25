@@ -5,3 +5,15 @@
 
 # Import to your project
 
+Step 1.添加Gradle
+
+’jcenter()‘
+ 
+Step 2.Add the dependency
+
+```kotlin
+dependencies {
+  ...
+  implementation 'com.davis.ui.pulltorefresh:pulltorefresh:2.1.0'
+}
+```
