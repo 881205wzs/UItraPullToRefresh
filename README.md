@@ -7,7 +7,15 @@
 
 Step 1.添加Gradle
 
-’jcenter()‘
+```kotlin
+allprojects {
+ repositories {
+	 ...
+	 jcenter()
+ }
+}
+```
+
  
 Step 2.Add the dependency
 
